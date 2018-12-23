@@ -1,0 +1,17 @@
+.contact-info {
+  border: 1px solid black;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+}
+.contact-info .name {
+  font-size: 14px;
+  color: black;
+  margin: 2px 8px;
+  text-transform: capitalize;
+}
+.contact-info .tel {
+  font-size: 12px;
+  color: gray;
+  margin: 2px 8px;
+}
