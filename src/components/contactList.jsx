@@ -7,8 +7,8 @@ class ContactList extends Component {
     contacts: [
       {
         id: 1,
-        name: "alon moalem",
-        telephone: "050-6974746",
+        name: "roni levi",
+        telephone: "050-4675872",
         city: "tel-aviv",
         dateOfBirth: "31/01/1983"
       },
@@ -21,7 +21,7 @@ class ContactList extends Component {
       },
       {
         id: 3,
-        name: "alon moalem",
+        name: "ronit bashan",
         telephone: "052-9587309",
         city: "tel-aviv",
         dateOfBirth: "22/03/1972"
