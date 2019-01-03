@@ -3,37 +3,15 @@ import ContactListItem from "./contactListItem";
 import "../components/contactList.css";
 
 class ContactList extends Component {
-  state = {
-    contacts: [
-      {
-        id: 1,
-        name: "roni levi",
-        telephone: "050-4675872",
-        city: "tel-aviv",
-        dateOfBirth: "31/01/1983"
-      },
-      {
-        id: 2,
-        name: "avi cohen",
-        telephone: "054-2837674",
-        city: "tel-aviv",
-        dateOfBirth: "08/11/1991"
-      },
-      {
-        id: 3,
-        name: "ronit bashan",
-        telephone: "052-9587309",
-        city: "tel-aviv",
-        dateOfBirth: "22/03/1972"
-      }
-    ]
-  };
   render() {
     return (
       <div className="contact-list">
         <ul>
-          {this.state.contacts.map(contact => (
-            <li key={contact.id}>
+          {this.props.contacts.map(contact => (
+            <li
+              key={contact.id}
+              onClick={() => this.props.onClickItem(contact)}
+            >
               <ContactListItem contact={contact} />
             </li>
           ))}

@@ -1,2 +1,7 @@
 .contact-card {
+  margin: 20px;
+}
+
+.contact-card .property {
+  margin: 5px;
 }
